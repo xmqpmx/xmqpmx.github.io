@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<!--This is HTML comment-->
+<head>
+	<style>
+	/*This is CSS comment*/
+	
+	/*double space*/
+		p {
+			line-height: 200%;
+			color: red;
+		}
+		.head{
+			font-size: 30pt;
+		}
+	</style>
+	
+	<!--script>
+		var a = prompt("What is your favorite color ");
+		//alert(userInput);
+		document.body.style.backgroundColor = 'a';
+	//This is a single line comment
+	
+	/*This is a multi-line
+	comment*/
+	
+	</script-->
+	<title>Final Review</title>
+	<meta charset = "utf-8">
+</head>
+<body>
+	<a href = "http://www.google.com"><p style = "color: red"><span style = "color: yellow">This</span> is a paragraphis a paragraphis a paragraphis a paragraphis a paragraphis a paragraphis a paragraphis a paragraphis a paragraphis a paragraphis a paragraphis a paragraphis a paragraphis a paragraphis a paragraphis a paragraphis a paragraphis a paragraphis a paragraphis a paragraphis a paragraphis a paragraphis a paragraphis a paragraphis a paragraphis a paragraph</p></a>
+	
+	<a href = "Images/3.JPG" target = "_blank"><img src = "Images/3.JPG" alt = "cat" height = "500px" ></a>
+	
+	<img src = "Images/2.jpg" alt = "cat" height = "500px" ondblclick = "this.src = 'Images/3.JPG'" onmouseout = "this.src = 'Images/2.jpg'">
+	
+	<h1 onclick = "document.getElementById('heading2').innerHTML = 'Good luck'">This is h1</h1>
+	<h2 id = "heading2" class = "head">This is h2</h2>
+	<h2 class = "head">This is another h2</h2>
+	
+	<ul>
+		<li>Fruit</li>
+		<li>Vegi
+			<ol>
+				<li>Lettuce</li>
+				<li>Carrot</li>
+			</ol>
+		</li>
+	</ul>
+	
+	<table border = "1">
+		<tr>
+			<th colspan = "2">CSCE102</th>
+		</tr>
+		
+		<tr>
+			<td>Lab</td>
+			<td>Project</td>
+		</tr>
+		
+	</table>
+	
+	<script>
+		/*for (var i = 1; i < 6; i++) {
+			alert("This is alert box " + i);
+		}
+		
+		
+		var i = 1;
+		while(i <= 5) {
+			alert("This is alert box " + i);
+			i++;
+		}*/
+		
+		/*for (var i = 5; i > 0; i--) {
+			alert(i);
+		}*/
+		
+		/*for (var i = 0; i <= 10; i +=2) {
+			alert(i);
+		}*/
+		
+		function even() {	
+			var num = parseInt(document.f1.t1.value);
+			if (num % 2 ==0 && num > 0) {
+				alert("Positive even number");
+			}
+			else {
+				alert("Not even or positive");
+			}
+		}
+	</script>
+	<button onclick = "odd()">Click</button>
+	
+	<form name = "f1">
+		<input type = "text" name = "t1">
+		<input type = "button" value = "click" onclick = "even()"> 
+	</form>
+</body>
+</html> 

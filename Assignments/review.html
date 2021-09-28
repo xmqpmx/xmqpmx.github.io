@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--This is a HTML comment-->
+	<meta charset = "utf-8">
+	<title>Review</title>
+
+	<!--Below is how you link a css to a html-->
+	<link rel = "stylesheet" type = "text/css" href = ".css">
+
+	<!--Style trag can only be used once per HTML page and it has to be in the head element-->
+	<style>
+		/*p is the selector, font-size is the property and 36pt os the value, this will set all paragranphs' gont size to be 36pt*/
+		p {font-size: 36pt;}
+
+		/*ID selector is used to choose an individual section, thus, that id name can only be used once in the current HTML page*/
+		#para2 {
+			text-indent: 50pt;
+			line-height: 200%;
+			border: 10pt solid blue;
+		}
+		
+		/*Class selector is used to choose one or more than section as a group, thus, that class name can  be used multipletimes in the current HTML page*/
+		.c1{
+			background-color: red;
+		}
+	</style>
+
+	<!--you can use script tags more than once in a HTML page and they can be placed either in the head or body element-->
+	<script>
+	/*This is a JS comment*/
+	//This a single line comment
+	
+	//var name = prompt("What is your name");
+	//alert("Hi " + name);
+	
+	function sum(a,b) {
+		var value = a + b;
+		alert(value);
+	}
+	
+	function mul(a,b,c){
+		alert(a*b*c);
+	}
+	
+	var num = 10;
+	var num2 = "10";
+	num = num + num2;
+	//1010
+	
+	function favColor() {
+		//alert("Change font color of the page");
+		changeColor('Purple');
+		
+	}
+	
+	function changeColor(a){
+		document.body.style.color = a;
+	}
+	
+	function compare(a) {
+		if (a >= 90) {
+			alert("A");
+		}
+		/*if(a>=80 && a<90) {
+		
+		}*/
+		
+		else if (a >= 80) {
+		}
+	
+	}
+	
+	function showName() {
+		var name = document.f1.t1.value;
+		alert(name);
+	}
+	</script>
+</head>
+<body>
+<table style = "border: 2pt solid black;">
+<form name = "f1">
+	<tr>
+		<th colspan = "2">This is table head</th>
+	</tr>
+	
+	<tr>
+		<td>Name<input type = "text" name = "t1" id = "t1"></td>
+		<td>Gender<input type = "radio"></td>
+		<td><input type = "button" value = "Click"onclick = "showName()"></td>
+	</tr>
+</form>
+</table>
+<h1 onclick = "favColor()">Click here</h1>
+	<div id = "div1">
+		<p class = "c1" style = "color: yellow; font-size: 24pt;" onclick = "this.style.color = 'red'; this.style.backgroundColor = 'yellow'; this.innerHTML = 'Good Luck'; document.getElementById('para2').innerHTML = 'Bye'">First...What is Lorem Ipsum?
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+	<p id = "para2" class = "c1"><b>Second!!!</b>What is Lorem Ipsum?
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+	</div>
+	<!--Using anchor element to creat a link with text descriptions-->
+	<a href = "http://www.google.com">Go to Google</a><br>
+
+	<!--Using anchor element to creat an image link-->
+	<a href = "http://www.google.com"><img src = "pic/1.jpg" alt = "cat1" width = "200px"></a>
+	
+
+	
+	<br>
+	
+	<a href = "#div1">Back to top</a>
+
+</body>
+</html>
